@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>controls</title>
+ </head> 
+ <body>
+<script>
+    function playSong()
+    {
+        song = new Audio();
+        song.src = "audio.mp3";
+        song.play();
+        song.onended = playSong;
+    }
+</script>
+</audio>
+ </body> 
+</html>
